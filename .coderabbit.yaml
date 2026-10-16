@@ -1,0 +1,12 @@
+# Review-bot evaluation on mirrored upstream PRs; see /code/delta-triage.
+early_access: true
+reviews:
+  profile: chill
+  auto_review:
+    enabled: true
+    base_branches:
+      - "^triage-base$"
+  slop_detection:
+    enabled: true
+    include_all_authors: true
+    label: "slop"
